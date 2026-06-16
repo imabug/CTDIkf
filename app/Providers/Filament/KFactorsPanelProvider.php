@@ -26,8 +26,7 @@ class KFactorsPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->id('kFactors')
-            ->path('kFactors')
-            ->login()
+            ->path('/')
             ->colors([
                 'primary' => Color::Amber,
             ])
@@ -53,7 +52,6 @@ class KFactorsPanelProvider extends PanelProvider
                 DispatchServingFilamentEvent::class,
             ])
             ->authMiddleware([
-                Authenticate::class,
             ]);
     }
 }
