@@ -8,8 +8,6 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Schema;
 use SplFileObject;
 
-use function Laravel\Prompts\info;
-
 class KFactorSeeder extends Seeder
 {
     use WithoutModelEvents;
@@ -48,5 +46,4 @@ class KFactorSeeder extends Seeder
 
         Schema::enableForeignKeyConstraints();
     }
-
 }
