@@ -19,7 +19,7 @@ return new class extends Migration
                 ->constrained('manufacturers')
                 ->noActionOnUpdate()
                 ->noActionOnDelete();
-            $table->string('model', 50)
+            $table->string('scanner', 50)
                 ->nullable(false)
                 ->index();
             $table->softDeletes();
