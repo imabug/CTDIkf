@@ -6,7 +6,7 @@
     "keywords": [
         "laravel",
         "CTDI",
-	"k-factor"
+        "k-factor"
     ],
     "license": "GPL-3.0-or-later",
     "require": {
@@ -82,7 +82,8 @@
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
+            "@php artisan package:discover --ansi",
+            "@php artisan filament:upgrade"
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
