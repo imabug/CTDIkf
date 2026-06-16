@@ -31,7 +31,8 @@ class ScannerSeeder extends Seeder
             'Biograph Vision',
             'Intevo Bold',
             'Symbia Pro.specta',
-            'Pro.Pulse',
+            'Pro.Pulse A tube',
+            'Pro.Pulse B tube',
         ],
         2 => [
             // Neurologica
