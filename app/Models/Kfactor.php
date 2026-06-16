@@ -12,7 +12,7 @@ class Kfactor extends Model
 
     /**
      * Fillable attributes
-     * 
+     *
      * @var array<string>
      */
     protected $fillable = [
@@ -26,10 +26,10 @@ class Kfactor extends Model
         'coll_T',
         'coll_width',
         'ctdi100_center',
-        'ctdi_w'
+        'ctdi_w',
     ];
 
-    
+
     /**
      * Attribute casting
      */

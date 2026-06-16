@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Scanner extends Model
 {
     use SoftDeletes;
-    
+
     /**
      * Attribute casting
      */
