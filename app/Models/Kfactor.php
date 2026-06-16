@@ -11,6 +11,16 @@ class Kfactor extends Model
     use SoftDeletes;
 
     /**
+     * Eager load relationships
+     * 
+     * @var array
+     */
+    protected $with = [
+        'manufacturer',
+        'scanner',
+    ];
+
+    /**
      * Fillable attributes
      *
      * @var array<string>

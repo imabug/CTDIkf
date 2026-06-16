@@ -14,6 +14,13 @@ class Scanner extends Model
     use SoftDeletes;
 
     /**
+     * Eager load relationships
+     * 
+     * @var array
+     */
+    protected $with = ['manufacturer'];
+    
+    /**
      * Attribute casting
      */
     protected function casts(): array
