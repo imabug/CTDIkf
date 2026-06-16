@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ManufacturerSeeder::class,
             ScannerSeeder::class,
+            KFactorSeeder::class,
         ]);
     }
 }
