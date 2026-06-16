@@ -48,7 +48,7 @@ class ScannerSeeder extends Seeder
                 DB::table('scanners')->insert(
                     [
                         'manufacturer_id' => $manuf,
-                        'model' => $s,
+                        'scanner' => $s,
                     ]
                 );
             }
