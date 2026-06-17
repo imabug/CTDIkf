@@ -13,18 +13,12 @@ return new class extends Migration
     {
         Schema::create('kfactors', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('scanner_id')
+            $table->string('scanner', 50)
                 ->nullable(false)
-                ->index()
-                ->constrained('scanners')
-                ->noActionOnUpdate()
-                ->noActionOnDelete();
-            $table->foreignId('manufacturer_id')
+                ->index();
+            $table->string('manufacturer', 50)
                 ->nullable(false)
-                ->index()
-                ->constrained('manufacturers')
-                ->noActionOnUpdate()
-                ->noActionOnDelete();
+                ->index();
             $table->unsignedTinyInteger('phantom_diameter')
                 ->nullable(false)
                 ->index();

@@ -29,8 +29,8 @@ class KFactorSeeder extends Seeder
                 break;
             }
             Kfactor::create([
-                'scanner_id' => $row[1],
-                'manufacturer_id' => $row[2],
+                'scanner' => $row[1],
+                'manufacturer' => $row[2],
                 'phantom_diameter' => $row[3],
                 'shaped_filter' => $row[4],
                 'kv' => $row[5],
