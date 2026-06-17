@@ -11,23 +11,13 @@ class Kfactor extends Model
     use SoftDeletes;
 
     /**
-     * Eager load relationships
-     * 
-     * @var array
-     */
-    protected $with = [
-        'manufacturer',
-        'scanner',
-    ];
-
-    /**
      * Fillable attributes
      *
      * @var array<string>
      */
     protected $fillable = [
-        'scanner_id',
-        'manufacturer_id',
+        'scanner',
+        'manufacturer',
         'phantom_diameter',
         'shaped_filter',
         'kv',
@@ -39,7 +29,6 @@ class Kfactor extends Model
         'ctdi_w',
     ];
 
-
     /**
      * Attribute casting
      */
@@ -50,18 +39,5 @@ class Kfactor extends Model
             'deleted_at'   => 'datetime',
             'updated_at'   => 'datetime',
         ];
-    }
-
-    /**
-     * Relationships
-     */
-    public function manufacturer(): BelongsTo
-    {
-        return $this->belongsTo(Manufacturer::class);
-    }
-
-    public function scanner(): BelongsTo
-    {
-        return $this->belongsTo(Scanner::class);
     }
 }
