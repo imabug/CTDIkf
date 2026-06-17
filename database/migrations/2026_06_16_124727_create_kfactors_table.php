@@ -40,6 +40,11 @@ return new class extends Migration
                 ->nullable(false)
                 ->index()
                 ->comment('Detector row width');
+            $table->string('coll_NT', 10)
+                ->nullable(false)
+                ->index()
+                ->storedAs('concat_ws("x",coll_N,coll_T)')
+                ->comment('Detector geometry');
             $table->double('coll_width')
                 ->unsigned()
                 ->nullable(false)
