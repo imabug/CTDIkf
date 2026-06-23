@@ -15,11 +15,11 @@ class Scanner extends Model
 
     /**
      * Eager load relationships
-     * 
+     *
      * @var array
      */
     protected $with = ['manufacturer'];
-    
+
     /**
      * Attribute casting
      */

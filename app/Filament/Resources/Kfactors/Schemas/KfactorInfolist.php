@@ -41,7 +41,7 @@ class KfactorInfolist
                     ->placeholder('-'),
                 TextEntry::make('deleted_at')
                     ->dateTime()
-                    ->visible(fn (Kfactor $record): bool => $record->trashed()),
+                    ->visible(fn(Kfactor $record): bool => $record->trashed()),
                 TextEntry::make('created_at')
                     ->dateTime()
                     ->placeholder('-'),

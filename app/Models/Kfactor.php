@@ -12,7 +12,7 @@ class Kfactor extends Model
 
     /**
      * Eager load relationships
-     * 
+     *
      * @var array
      */
     protected $with = [
