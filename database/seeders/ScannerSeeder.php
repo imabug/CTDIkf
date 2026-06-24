@@ -19,8 +19,8 @@ class ScannerSeeder extends Seeder
         // Siemens
         1 => [
             'Naeotom Alpha',
-            'Definition AS/AS+',
-            'Somatom Flash',
+            'Definition AS',
+            'Somatom Flash A tube',
             'Somatom Force',
             'Somatom Drive',
             'Definition Edge',
@@ -33,6 +33,7 @@ class ScannerSeeder extends Seeder
             'Symbia Pro.specta',
             'Pro.Pulse A tube',
             'Pro.Pulse B tube',
+            'Somatom Flash B tube',
         ],
         2 => [
             // Neurologica
